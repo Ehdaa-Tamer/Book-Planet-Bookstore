@@ -73,7 +73,7 @@ const QuotesPage = () => {
             <p className="text-right text-gray-600 mb-4">
               ― {quote.author}, {quote.book}
             </p>
-            <button className="px-4 py-2 bg-[#b0acaa] text-white rounded hover:bg-gray-600 transition-colors">
+            <button className="px-4 py-2 bg-[#b0acaa] duration-200 ease-in-out hover:bg-white hover:text-[#b0acaa] hover:border-[#b0acaa] border text-white rounded  transition-colors">
               View Book
             </button>
           </div>

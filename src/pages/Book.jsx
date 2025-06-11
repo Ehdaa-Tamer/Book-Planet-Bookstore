@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
 const BookPage = () => {
   const [showFullContent, setShowFullContent] = useState(false);
 
   return (
     <div className="min-h-screen bg-[#f8f2f0] font-roboto">
+      <Navbar></Navbar>
       {/* Breadcrumb Navigation */}
       <nav className="py-4 px-4 sm:px-6 lg:px-8">
         <ol className="flex justify-center space-x-2 text-sm sm:text-base">
@@ -31,13 +34,13 @@ const BookPage = () => {
               className="w-full max-w-xs rounded-lg shadow-lg mb-6 hover:shadow-xl transition-shadow"
             />
             <div className="w-full space-y-3">
-              <button className="w-full bg-[#8a8583] hover:bg-white hover:text-[#8a8583] hover:border-[#b0acaa] border text-white font-bold py-3 px-6 rounded-full transition-colors duration-300">
+              <button className="w-full bg-[#b0acaa] hover:bg-white hover:text-[#8a8583] hover:border-[#b0acaa] border text-white font-bold py-3 px-6 rounded-full transition-colors duration-300">
                 View
               </button>
-              <button className="w-full hover:bg-[#8a8583] bg-white text-[#8a8583] border-[#b0acaa] py-3 px-6 rounded-full border hover:text-white transition-colors duration-300">
+              <button className="w-full hover:bg-[#b0acaa] bg-white text-[#8a8583] border-[#b0acaa] py-3 px-6 rounded-full border hover:text-white transition-colors duration-300">
                 Add to Cart
               </button>
-              <button className="w-full hover:bg-[#8a8583] bg-white text-[#8a8583] border-[#b0acaa] py-3 px-6 rounded-full border hover:text-white transition-colors duration-300">
+              <button className="w-full hover:bg-[#b0acaa] bg-white text-[#8a8583] border-[#b0acaa] py-3 px-6 rounded-full border hover:text-white transition-colors duration-300">
                 Add to Favorites
               </button>
             </div>
@@ -139,6 +142,7 @@ const BookPage = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

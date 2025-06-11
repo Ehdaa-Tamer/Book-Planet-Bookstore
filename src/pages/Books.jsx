@@ -125,12 +125,12 @@ const BooksPage = () => {
         Add to cart
       </button>
       <div className="flex space-x-2">
-        <button className="px-3 py-1 border border-[#b0acaa] text-[#8a8583] hover:bg-[#f0ecea] rounded text-sm transition-colors duration-300">
+        <button className="px-3 py-1 border hover:bg-[#b0acaa] bg-white text-[#8a8583] border-[#b0acaa]  hover:text-white  rounded text-sm transition-colors duration-300">
           <a href="./Book">
           View
           </a>
         </button>
-        <button className="px-3 py-1 border border-[#b0acaa] text-[#8a8583] hover:bg-[#f0ecea] rounded text-sm transition-colors duration-300">
+        <button className="px-3 py-1 border hover:bg-[#b0acaa] bg-white text-[#8a8583] border-[#b0acaa]  hover:text-white  rounded text-sm transition-colors duration-300">
           Add to favorites
         </button>
       </div>
